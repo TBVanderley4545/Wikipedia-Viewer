@@ -1,0 +1,43 @@
+/******************************************
+GENERAL STYLING
+******************************************/
+body {
+  background-color: #1E1E1E;
+  color: #C5C5C5;
+  font-family: sans-serif;
+}
+input[type="text"],
+input[type="submit"] {
+  background-color: #1E1E1E;
+  border: 1px solid #20c1ff;
+  border-radius: 10em;
+  color: #20c1ff;
+  font-size: 16px;
+  max-width: 200px;
+  padding: 0.5em 2em;
+  width: fit-content;
+  width: -moz-fit-content;
+}
+.content-wrapper {
+  text-align: center;
+}
+.coordinate-entries {
+  display: flex;
+  flex-direction: row;
+  margin: 2em auto;
+  max-width: 50%;
+}
+.coordinate-entries .coordinate-entry {
+  display: flex;
+  flex-direction: column;
+  margin: 0 3em 0 auto;
+  max-width: 50%;
+}
+.coordinate-entries .coordinate-entry:nth-of-type(2) {
+  margin: 0 auto 0 3em;
+}
+.coordinate-entries .coordinate-entry label {
+  text-align: center;
+}
+
+/*# sourceMappingURL=main.css.map */
