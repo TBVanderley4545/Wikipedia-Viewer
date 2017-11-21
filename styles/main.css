@@ -12,8 +12,8 @@ body {
 .search-form {
   height: 30px;
   margin: 0 auto;
+  overflow: visible!important;
   position: relative;
-  transition-duration: 0.75s;
   width: 30px;
 }
 .search-form .search-field {
@@ -29,7 +29,7 @@ body {
 .search-form .search-field:focus {
   outline: none;
 }
-.search-form::before {
+.search-form .magnifying-handle {
   background-color: #20c1ff;
   content: '';
   display: block;
