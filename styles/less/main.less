@@ -7,7 +7,7 @@
 @color-vibrant-blue: #20c1ff;
 
 // Transitions
-@primary-transition-speed: .75s;
+@primary-transition-speed: 0.75s;
 
 // Measurements
 @coordinate-entry-margin: 3em;
@@ -44,6 +44,7 @@ body {
     height: 100%;
     width: 100%;
     padding: 0;
+
     &:focus {
       outline: none;
     }
@@ -59,5 +60,12 @@ body {
     top: 115%;
     transform: rotate(45deg);
     width: 19px;
+  }
+}
+
+.cancel-button {
+  span {
+    &:nth-child(1) {
+    }
   }
 }
