@@ -3,6 +3,14 @@ $(document).ready(function() {
   var $form = $('.search-form');
 
   $form.click(function() {
-    alert("hello");
+    $(this).css({
+      width: '400px'
+    })
+  });
+
+  $('#quick-check').click(function() {
+    $form.css({
+      width: '30px'
+    })
   });
 });
