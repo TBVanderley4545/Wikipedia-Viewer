@@ -14,19 +14,29 @@ $(document).ready(function() {
     }, transitionSpeed, function() {
       $form.animate({
         width: '400px'
-      }, transitionSpeed);
+      }, transitionSpeed, function() {
+        if(!$('.cancel-button').hasClass('cancel-visible')){
+          $('.cancel-button').addClass('cancel-visible');
+        }
+      });
     });
   });
 
   $('#quick-check').click(function() {
-    $form.animate({
-      width: '30px'
-    }, transitionSpeed, function() {
-      $('.magnifying-handle').animate({
-        left: '90%',
-        top: '115%',
-        width: '19px'
+    if($('.cancel-button').hasClass('cancel-visible')) {
+      $('.cancel-button').removeClass('cancel-visible');
+    }
+
+    window.setTimeout(function () {
+      $form.animate({
+        width: '30px'
+      }, transitionSpeed, function() {
+        $('.magnifying-handle').animate({
+          left: '90%',
+          top: '115%',
+          width: '19px'
+        }, transitionSpeed);
       });
-    });
+    }, 250);
   });
 });
