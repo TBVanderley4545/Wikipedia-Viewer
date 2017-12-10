@@ -7,7 +7,7 @@
 @color-vibrant-blue: #20c1ff;
 
 // Transitions
-@primary-transition-speed: 0.75s;
+@primary-transition-speed: 0.3s;
 
 // Measurements
 @coordinate-entry-margin: 3em;
@@ -18,6 +18,7 @@
 /******************************************
 GENERAL STYLING
 ******************************************/
+
 body {
   background-color: @color-body-background;
   color: @color-light-gray;
@@ -43,11 +44,20 @@ body {
     font-size: 16px;
     height: 100%;
     width: 100%;
-    padding: 0;
+    padding: 0 1.25em;
+    -webkit-transition: @primary-transition-speed ease-in-out;
+    -moz-transition: @primary-transition-speed ease-in-out;
+    -o-transition: @primary-transition-speed ease-in-out;
+    transition: @primary-transition-speed ease-in-out;
+
 
     &:focus {
       outline: none;
     }
+  }
+
+  .closed-input {
+    padding: 0;
   }
 
   .magnifying-handle {
@@ -67,19 +77,20 @@ body {
   height: 35px;
   overflow: hidden;
   position: absolute;
-  right: 7%;
+  right: 0;
   top: 0;
   width: 35px;
 
   span {
     background-color: #fff;
     border-radius: 300px;
+    background-color: @color-vibrant-blue;
     height: 3px;
     position: absolute;
-    -webkit-transition: 0.25s ease-in-out;
-    -moz-transition: 0.25s ease-in-out;
-    -o-transition: 0.25s ease-in-out;
-    transition: 0.25s ease-in-out;
+    -webkit-transition: @primary-transition-speed ease-in-out;
+    -moz-transition: @primary-transition-speed ease-in-out;
+    -o-transition: @primary-transition-speed ease-in-out;
+    transition: @primary-transition-speed ease-in-out;
     width: 50%;
 
     &:nth-child(1) {
@@ -87,7 +98,8 @@ body {
       -moz-transform: rotate(135deg);
       -o-transform: rotate(135deg);
       transform: rotate(135deg);
-      top: 50px;
+      left: 80px;
+      bottom: 94px;
     }
 
     &:nth-child(2) {
@@ -95,7 +107,8 @@ body {
       -moz-transform: rotate(45deg);
       -o-transform: rotate(45deg);
       transform: rotate(45deg);
-      bottom: 50px;
+      top: 98px;
+      left: 80px;
     }
   }
 }
@@ -103,11 +116,17 @@ body {
 .cancel-visible {
   span {
     &:nth-child(1) {
+      bottom: 14px;
+      left: 0;
+      right: 0;
       top: 18px;
     }
 
     &:nth-child(2) {
       bottom: 14px;
+      right: 0;
+      left: 0;
+      top: 18px;
     }
   }
 }

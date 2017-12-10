@@ -24,10 +24,17 @@ body {
   font-size: 16px;
   height: 100%;
   width: 100%;
-  padding: 0;
+  padding: 0 1.25em;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 .search-form .search-field:focus {
   outline: none;
+}
+.search-form .closed-input {
+  padding: 0;
 }
 .search-form .magnifying-handle {
   background-color: #20c1ff;
@@ -44,19 +51,20 @@ body {
   height: 35px;
   overflow: hidden;
   position: absolute;
-  right: 7%;
+  right: 0;
   top: 0;
   width: 35px;
 }
 .cancel-button span {
   background-color: #fff;
   border-radius: 300px;
+  background-color: #20c1ff;
   height: 3px;
   position: absolute;
-  -webkit-transition: 0.25s ease-in-out;
-  -moz-transition: 0.25s ease-in-out;
-  -o-transition: 0.25s ease-in-out;
-  transition: 0.25s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
   width: 50%;
 }
 .cancel-button span:nth-child(1) {
@@ -64,20 +72,28 @@ body {
   -moz-transform: rotate(135deg);
   -o-transform: rotate(135deg);
   transform: rotate(135deg);
-  top: 50px;
+  left: 80px;
+  bottom: 94px;
 }
 .cancel-button span:nth-child(2) {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
-  bottom: 50px;
+  top: 98px;
+  left: 80px;
 }
 .cancel-visible span:nth-child(1) {
+  bottom: 14px;
+  left: 0;
+  right: 0;
   top: 18px;
 }
 .cancel-visible span:nth-child(2) {
   bottom: 14px;
+  right: 0;
+  left: 0;
+  top: 18px;
 }
 
 /*# sourceMappingURL=main.css.map */
