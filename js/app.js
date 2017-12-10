@@ -11,12 +11,11 @@ $(document).ready(function() {
   $formInput.click(function() {
     if ($(this).hasClass('closed-input')) {
       $('.magnifying-handle').animate({
-        // top: '130%',
         left: '105%',
         top: '102%',
         width: '0px'
       }, transitionSpeed, function() {
-        $formInput.removeClass('closed-input');                    
+        $formInput.removeClass('closed-input');
         $form.animate({
           width: '400px'
         }, transitionSpeed, function() {
@@ -26,7 +25,7 @@ $(document).ready(function() {
           }
         });
       });
-    }    
+    }
   });
 
   $('.cancel-button').click(function() {
@@ -34,7 +33,7 @@ $(document).ready(function() {
       $('.cancel-button').removeClass('cancel-visible');
     }
     window.setTimeout(function() {
-      $formInput.addClass('closed-input');      
+      $formInput.addClass('closed-input');
       $form.animate({
         width: '30px'
       }, transitionSpeed, function() {
