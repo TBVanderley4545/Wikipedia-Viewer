@@ -2,8 +2,8 @@
 GENERAL STYLING
 ******************************************/
 body {
-  background-color: #1E1E1E;
-  color: #C5C5C5;
+  background-color: #1e1e1e;
+  color: #c5c5c5;
   font-family: sans-serif;
 }
 .content-wrapper {
@@ -12,12 +12,12 @@ body {
 .search-form {
   height: 30px;
   margin: 0 auto;
-  overflow: visible!important;
+  overflow: visible !important;
   position: relative;
   width: 30px;
 }
 .search-form .search-field {
-  background-color: #1E1E1E;
+  background-color: #1e1e1e;
   border: 4px solid #20c1ff;
   border-radius: 10em;
   color: #20c1ff;
