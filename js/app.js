@@ -10,7 +10,8 @@ $(document).ready(function() {
 
   $formInput.click(function() {
     if ($(this).hasClass('closed-input')) {
-      $('.magnifying-handle').animate({
+      $('.magnifying-handle').animate(
+        {
           left: '105%',
           top: '102%',
           width: '0px'
@@ -18,7 +19,8 @@ $(document).ready(function() {
         transitionSpeed,
         function() {
           $formInput.removeClass('closed-input');
-          $form.animate({
+          $form.animate(
+            {
               width: '400px'
             },
             transitionSpeed,
@@ -46,12 +48,14 @@ $(document).ready(function() {
       });
     window.setTimeout(function() {
       $formInput.addClass('closed-input');
-      $form.animate({
+      $form.animate(
+        {
           width: '30px'
         },
         transitionSpeed,
         function() {
-          $('.magnifying-handle').animate({
+          $('.magnifying-handle').animate(
+            {
               left: '90%',
               top: '115%',
               width: '19px'
