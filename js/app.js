@@ -39,9 +39,7 @@ $(document).ready(function() {
       $('.cancel-button').removeClass('cancel-visible');
     }
 
-    $(this)
-      .find('.special-class')
-      .css({
+    $(this).find('.special-class').css({
         color: '#ff0076'
       });
     window.setTimeout(function() {
