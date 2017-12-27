@@ -41,7 +41,8 @@ $(document).ready(function() {
 
     $(this).find('.special-class').css({
         color: '#ff0076'
-      });
+    });
+    
     window.setTimeout(function() {
       $formInput.addClass('closed-input');
       $form.animate({
